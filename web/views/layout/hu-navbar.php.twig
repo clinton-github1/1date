@@ -1,0 +1,44 @@
+<div class="topnav" id="myTopnav">
+   <div class="dropdown">
+    <button class="dropbtn">Hungarian 
+      <i class="ion-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+        
+      <a href="{{ app.url_generator.generate('ch-index') }}">Chinese</a>
+      <a href="{{ app.url_generator.generate('cz-index') }}">Czech</a>
+      <a href="{{ app.url_generator.generate('dan-index') }}">Danish</a>
+      <a href="{{ app.url_generator.generate('deu-index') }}">Deutsch</a>
+      <a href="{{ app.url_generator.generate('esp-index') }}">Espanol</a>
+      <a href="{{ app.url_generator.generate('index') }}">English</a>
+      <a href="{{ app.url_generator.generate('gr-index') }}">Greek</a>
+      <a href="{{ app.url_generator.generate('fr-index') }}">Francais</a>
+      <a href="{{ app.url_generator.generate('it-index') }}">Italiano</a>
+      <a href="{{ app.url_generator.generate('jap-index') }}">Japanese</a>
+      <a href="{{ app.url_generator.generate('ned-index') }}">Nederlands</a>
+      <a href="{{ app.url_generator.generate('pol-index') }}">Polska</a>
+      <a href="{{ app.url_generator.generate('por-index') }}">Portuguese</a>
+      <a href="{{ app.url_generator.generate('rus-index') }}">Russian</a>
+    </div>
+  </div>  
+  <a href="{{ app.url_generator.generate('hu-index') }}">Kezdőoldal</a>  
+  <a href="{{ app.url_generator.generate('hu-diff-dates') }}">Miért tér el a Húsvét dátuma?</a>
+  <a href="{{ app.url_generator.generate('hu-why-one-date') }}">Miért fontos a közös Húsvéti dátum?</a>
+  <a href="{{ app.url_generator.generate('hu-what-can-we-do') }}">Mit tehetünk mi?</a>
+  <a href="{{ app.url_generator.generate('hu-endorsement') }}">Endorsements</a>
+  <a href="{{ app.url_generator.generate('hu-inspiration') }}">Lelki háttér</a>
+  <a href="{{ app.url_generator.generate('hu-sign-petition') }}">Szavazás az Egységes Húsvéti Dátumra</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+

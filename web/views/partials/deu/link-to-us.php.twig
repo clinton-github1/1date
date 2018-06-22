@@ -1,0 +1,22 @@
+{% include "layout/deu-header.php.twig" %}
+
+<section class="link-to-us">
+
+    <h1>Verlinkung auf diese Webseite</h1>
+    <p>Bitte benutzt eine der untenstehenden Link-Optionen um auf Eurer Internetseite einen Link auf unsere Webseite einzurichten (Bitte kopiert die Bilder auf euren eigenen Server). .</p>   
+    
+    <div class="links">
+    
+        <div class="lnk-img"><a href="{{ app.url_generator.generate('deu-index') }}" class="pg-links"><img src="{{ app.request.getbaseurl }}/shared/images/deu-onedate%20.jpg" alt="home page link image"></a></div>
+        <p><a href="{{ app.url_generator.generate('deu-index') }}" class="pg-links">OneDate.org - Eure Stimme zählt - zur gemeinsamen Feier des Osterfestes</a></p>
+            <p>Mach einen kleinen Schritt in Richtung <a href="{{ app.url_generator.generate('deu-index') }}" class="pg-links"> Einheit der Christen.</a>.  Eure Stimme zählt - zur gemeinsamen Feier des Osterfestes.</p>
+        
+        <p> Internet-Petition für die <a href="{{ app.url_generator.generate('deu-index') }}" class="pg-links"> Vereinheitlichung des Osterdatums.</a>.</p>
+    
+    </div>
+
+
+</section>
+
+{% include "share/fb_link.php.twig" %}
+{% include "layout/deu-footer.php.twig" %}

@@ -1,0 +1,22 @@
+{% include "layout/por-header.php.twig" %}
+
+<section class="link-to-us">
+
+    <h1>Nosso link</h1>
+    <p>Use um dos links abaixo para adicionar nosso link (Copie as imagens para o seu servidor).</p>   
+    
+    <div class="links">
+    
+        <div class="lnk-img"><a href="{{ app.url_generator.generate('por-index') }}" class="pg-links"><img src="{{ app.request.getbaseurl }}/shared/images/por-banner-Rom12-5%20(1).jpg" alt="home page link image"></a></div>
+        <p><a href="{{ app.url_generator.generate('por-index') }}" class="pg-links">OneDate.org - Vote para todos celebrarmos a Festa da Páscoa na mesma data</a></p>
+            <p>Dê um pequeno passo em direção <a href="{{ app.url_generator.generate('por-index') }}" class="pg-links"> à unidade cristã</a>. Vote para todos celebrarmos a Festa da Páscoa na mesma data.</p>
+        
+        <p>Página de abaixo-assinado para a <a href="{{ app.url_generator.generate('por-index') }}" class="pg-links">unificação da data da Páscoa.</a>.</p>
+    
+    </div>
+
+
+</section>
+
+{% include "share/fb_link.php.twig" %}
+{% include "layout/por-footer.php.twig" %}

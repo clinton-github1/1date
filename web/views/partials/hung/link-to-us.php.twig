@@ -1,0 +1,23 @@
+{% include "layout/hu-header.php.twig" %}
+
+<section class="link-to-us">
+
+    <h1>Linkeld ezt az oldalt</h1>
+    <p>Kérünk, használjátok az alábbi link-opciók egyikét, hogy így linkelhessétek ezt az oldalt a tiétekre (a képeket másoljátok a saját szerveretekre).</p>   
+    
+    <div class="links">
+    
+        <div class="lnk-img"><a href="{{ app.url_generator.generate('hu-index') }}" class="pg-links"><img src="{{ app.request.getbaseurl }}/shared/images/hung-onedate%20.jpg" alt="home page link image"></a></div>
+        <p><a href="{{ app.url_generator.generate('hu-index') }}" class="pg-links">OneDate.org - Írd alá, hogy egy időpontban ünnepeljük a Húsvétot</a></p>
+            <p>Tégy egy kis lépést <a href="{{ app.url_generator.generate('hu-index') }}" class="pg-links"> Keresztények Egységéért</a>.  Írd alá, hogy egy időpontban ünnepeljük a Húsvétot.</p>
+        
+        <p> Internetes petíció <a href="{{ app.url_generator.generate('hu-index') }}" class="pg-links"> a Húsvét közös dátumáért.</a>.</p>
+    
+    </div>
+
+
+</section>
+
+
+{% include "share/fb_link.php.twig" %}
+{% include "layout/hu-footer.php.twig" %}

@@ -1,0 +1,42 @@
+<div class="topnav" id="myTopnav">
+   <div class="dropdown">
+    <button class="dropbtn">Nederlands
+      <i class="ion-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{{ app.url_generator.generate('ch-index') }}">Chinese</a>
+      <a href="{{ app.url_generator.generate('cz-index') }}">Czech</a>
+      <a href="{{ app.url_generator.generate('dan-index') }}">Danish</a>
+      <a href="{{ app.url_generator.generate('deu-index') }}">Deutsch</a>
+      <a href="{{ app.url_generator.generate('esp-index') }}">Espanol</a>
+      <a href="{{ app.url_generator.generate('index') }}">English</a>
+      <a href="{{ app.url_generator.generate('gr-index') }}">Greek</a>
+      <a href="{{ app.url_generator.generate('fr-index') }}">Francais</a>
+      <a href="{{ app.url_generator.generate('hu-index') }}">Hungarian</a>
+      <a href="{{ app.url_generator.generate('it-index') }}">Italiano</a>
+      <a href="{{ app.url_generator.generate('jap-index') }}">Japanese</a>
+      <a href="{{ app.url_generator.generate('pol-index') }}">Polska</a>
+      <a href="{{ app.url_generator.generate('por-index') }}">Portuguese</a>
+      <a href="{{ app.url_generator.generate('rus-index') }}">Russian</a>
+    </div>
+  </div>  
+  <a href="{{ app.url_generator.generate('ned-index') }}">Home</a>  
+  <a href="{{ app.url_generator.generate('ned-diff-dates') }}">Verschillende Data?</a>
+  <a href="{{ app.url_generator.generate('ned-why-one-date') }}">Waarom Eén Paasdatum?</a>
+  <a href="{{ app.url_generator.generate('ned-what-can-we-do') }}">Wat kunnen wij doen?</a>
+  <a href="{{ app.url_generator.generate('ned-endorsement') }}">Endorsements</a>
+  <a href="{{ app.url_generator.generate('ned-inspiration') }}">Inspiratie</a>
+  <a href="{{ app.url_generator.generate('ned-sign-petition') }}">Kies voor Eén Datum</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>

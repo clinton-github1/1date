@@ -1,0 +1,22 @@
+{% include "layout/pol-header.php.twig" %}
+
+<section class="link-to-us">
+
+    <h1>Link do nas</h1>
+    <p>Prosimy, o zamieszczenie poniższego linka (Prosimy o skopiowanie obrazka na własny serwer).</p>   
+    
+    <div class="links">
+    
+        <div class="lnk-img"><a href="{{ app.url_generator.generate('pol-index') }}" class="pg-links"><img src="{{ app.request.getbaseurl }}/shared/images/pol-onedate%20(1).jpg" alt="home page link image"></a></div>
+        <p><a href="{{ app.url_generator.generate('pol-index') }}" class="pg-links">OneDate.org - Podpisz się pod petycją o wspólną datę Wielkanocy</a></p>
+            <p>Podejmij mały krok naprzód <a href="{{ app.url_generator.generate('pol-index') }}" class="pg-links"> Jedność Chrześcijan</a>. Podpisz się pod petycją o wspólną datę Wielkanocy.</p>
+        
+        <p> Internetowa petycja dla<a href="{{ app.url_generator.generate('pol-index') }}" class="pg-links"> zjednoczenia daty Wielkanocy.</a>.</p>
+    
+    </div>
+
+
+</section>
+
+{% include "share/fb_link.php.twig" %}
+{% include "layout/pol-footer.php.twig" %}

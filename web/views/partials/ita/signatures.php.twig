@@ -1,0 +1,43 @@
+
+{% include "layout/it-header.php.twig" %}
+
+<?php
+include "../shared/petition_db_connect.php";
+?>
+
+<div class="tell-othrs"><a href="tell-others.php" class="pg-links">Dillo ad Altri</a></div>
+
+<?php
+
+class Signatures{
+    
+    public function allSignatures(){
+    
+    $database= new Database();
+    $db= $database->getConnection();
+    
+    $sql= "SELECT * FROM petition ORDER BY ID DESC";
+    $result= $db->query($sql);
+    
+    if($result->num_rows>0){
+        
+        echo "<table width=100%; border= 1><tr><th>Code</th><th>Nome</th><th>Email Address</th><th>Città</th><th>Paese</th></tr>";
+        
+        while($row=mysqli_fetch_assoc($result)){
+            
+            echo "<tr><td>" . $row['ID'] . "</td>" . "<td>" . $row['Name']. "</td>" . "<td>" . $row['Email']. "</td>" . "<td>" . $row['City'] . "</td>"  . "<td>" . $row['Country'] . "</td></tr>";
+            
+        }
+        
+        echo "</table>";
+        return $db;
+    }
+    }
+}
+
+$signature= new Signatures();
+$signature->allSignatures();
+?>
+
+{% include "share/fb_link.php.twig" %}
+{% include "layout/it-footer.php.twig" %}

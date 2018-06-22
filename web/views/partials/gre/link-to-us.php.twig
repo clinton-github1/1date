@@ -1,0 +1,22 @@
+{% include "layout/gr-header.php.twig" %}
+
+<section class="link-to-us">
+
+    <h1>Συνδεθείτε μαζί μας</h1>
+    <p>Παρακαλώ χρησιμοποιήστε μια από τις παρακάτω συνδέσεις για να έρθετε σε επικοινωνία μαζί μας. (Παρακαλώ, αντιγράψτε τις εικόνες στον υπολογιστή σας).</p>   
+    
+    <div class="links">
+    
+        <div class="lnk-img"><a href="{{ app.url_generator.generate('gr-index') }}" class="pg-links"><img src="{{ app.request.getbaseurl }}/shared/images/onedate.jpg" alt="home page link image"></a></div>
+        <p><a href="{{ app.url_generator.generate('gr-index') }}" class="pg-links">OneDate.org - Ψηφίστε για κοινή ημερομηνία του εορτασμού του Πάσχα</a></p>
+            <p>Κάντε ένα μικρό βήμα προς αυτή την κατεύθυνση <a href="{{ app.url_generator.generate('gr-index') }}" class="pg-links"> Χριστιανική Ενότητα</a>.  Ψηφίστε για κοινή ημερομηνία του εορτασμού του Πάσχα.</p>
+        
+        <p> Αίτηση ιστοσελίδας <a href="{{ app.url_generator.generate('gr-index') }}" class="pg-links"> για κοινή ημερομηνία του Πάσχα.</a>.</p>
+    
+    </div>
+
+
+</section>
+
+{% include "share/fb_link.php.twig" %}
+{% include "layout/gr-footer.php.twig" %}
